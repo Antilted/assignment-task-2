@@ -17,6 +17,7 @@
     </head>
 
     <body>
+
         <div class="row">
             <div class="image-container"><img src="images/original/0.png" height="200" width="200"/></div>
             <div class="image-container"><img src="images/original/1.png" height="200" width="200"/></div>
@@ -34,25 +35,26 @@
             <div class="image-container"><img src="images/original/7.png" height="200" width="200"/></div>
             <div class="image-container"><img src="images/original/8.png" height="200" width="200"/></div>
         </div>
+        
     </body>
+    
 </html>
 
 <script>
-
     document.body.style.backgroundColor = `Gray`
-    // document.body.style.backgroundColor = `hsl(180, 50%, 50%)`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 2000)
+        }
+    })
+}
+
 </script>
