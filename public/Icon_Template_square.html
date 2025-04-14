@@ -43,19 +43,19 @@
 <script>
     document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }0.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }0.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }0.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }0.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }0.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
     document.body.style.backgroundColor = `Gray`
 
@@ -63,125 +63,128 @@
         const icon_elements = Array.from (document.getElementsByTagName (`img`))
         icon_elements.forEach ((element, index) => {
             const audio = new Audio (`sounds/${ index }1.mp3`)
-            element.onpointerover = () => {
+                     element.onpointerdown = () => {
+                audio.play ()
                 element.src = `images/changed/${ index }1.png`
+                setTimeout (() => {
+                    element.src = `images/original/${ index }1.png`
+                }, 3000)
             }
-            element.onpointerleave = () => {
-                element.src = `images/original/${ index }1.png`
-            }
-            element.onpointerdown = () => audio.play ()
         })
     }
 
     document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }2.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }2.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }2.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }2.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }2.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
+document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }3.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }3.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }3.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }3.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }3.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
+document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }4.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }4.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }4.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }4.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }4.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
+document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }5.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }5.png`
-            }
-            element.onpointerleave = () => {
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }5.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }5.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }5.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }6.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }6.png`
-            }
-            element.onpointerleave = () => {
+document.body.style.backgroundColor = `Gray`
+
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }6.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }6.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }6.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }7.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }7.png`
-            }
-            element.onpointerleave = () => {
+document.body.style.backgroundColor = `Gray`
+
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }7.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }7.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }7.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 
-    document.body.style.backgroundColor = `Gray`
 
-    window.onload = () =>{
-        const icon_elements = Array.from (document.getElementsByTagName (`img`))
-        icon_elements.forEach ((element, index) => {
-            const audio = new Audio (`sounds/${ index }8.mp3`)
-            element.onpointerover = () => {
-                element.src = `images/changed/${ index }8.png`
-            }
-            element.onpointerleave = () => {
+document.body.style.backgroundColor = `Gray`
+
+window.onload = () =>{
+    const icon_elements = Array.from (document.getElementsByTagName (`img`))
+    icon_elements.forEach ((element, index) => {
+        const audio = new Audio (`sounds/${ index }8.mp3`)
+                 element.onpointerdown = () => {
+            audio.play ()
+            element.src = `images/changed/${ index }8.png`
+            setTimeout (() => {
                 element.src = `images/original/${ index }8.png`
-            }
-            element.onpointerdown = () => audio.play ()
-        })
-    }
+            }, 3000)
+        }
+    })
+}
 </script>
